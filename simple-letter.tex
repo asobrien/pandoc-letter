@@ -153,7 +153,8 @@ $if(toc)$
 }
 $endif$
 
-\begin{letter}{$for(address)$$address$ \\$endfor$}
+\begin{letter}{$if(address-caps)${\sc $address-caps$ \\}$endif$
+  $for(address)$$address$ \\$endfor$}
 
 $if(opening)$
 \opening{$opening$}
